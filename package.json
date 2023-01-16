@@ -1,0 +1,19 @@
+{
+  "name": "nako-yard",
+  "version": "1.0.0",
+  "description": "Basic shunting yard algorithm implementation in nadesiko3",
+  "main": "index.nako",
+  "scripts": {
+    "test": "cnako3 --test ./test/main.test.nako3"
+  },
+  "keywords": [
+    "nadesiko3",
+    "shunting-yard",
+    "rpn"
+  ],
+  "author": "Luckas",
+  "license": "MIT",
+  "dependencies": {
+    "nadesiko3": "^3.4.4"
+  }
+}

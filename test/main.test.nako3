@@ -1,0 +1,17 @@
+!『../src/rpn_evaluator.nako3』を取り込む。
+!『../src/shunting_yard.nako3』を取り込む。
+
+●テスト:RPNエバリュエータとは
+    「2 4 * 8 +」のrpn_evaluator__RPNエバリュエータと16がASSERT等。
+    「2 4 8 + *」のrpn_evaluator__RPNエバリュエータと24がASSERT等。
+    「3 2 * 11 -」のrpn_evaluator__RPNエバリュエータと-5がASSERT等。
+    「2 5 * 4 + 3 2 * 1 + /」のrpn_evaluator__RPNエバリュエータと2がASSERT等。
+ここまで。
+
+●テスト:シュンティングヤードとは
+    「2 + 3 * 4 - 6 / 2」のshunting_yard__シュンティングヤードと「2 3 4 * + 6 2 / -」が ASSERT等。
+    「3 + 4 * 2 / ( 1 - 5 )」のshunting_yard__シュンティングヤードと「3 4 2 * 1 5 - / +」が ASSERT等。
+    「5 * ( 2 + 1 ) - 3 / 4」のshunting_yard__シュンティングヤードと「5 2 1 + * 3 4 / -」が ASSERT等。
+    「( 1 + 2 ) * ( 3 - 4 ) / 5」のshunting_yard__シュンティングヤードと「1 2 + 3 4 - * 5 /」が ASSERT等。
+    「3 + 4 * 2 / ( 1 - 5 ) + 6 * 3」のshunting_yard__シュンティングヤードと「3 4 2 * 1 5 - / + 6 3 * +」が ASSERT等。
+ここまで。
